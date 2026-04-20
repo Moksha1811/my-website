@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My First Website</title>
+  <style>
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+
+    /* NAV */
+    nav {
+      background: #2c3e50;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo { color: white; font-size: 1.4rem; font-weight: bold; }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav ul a { color: #ccc; text-decoration: none; }
+    nav ul a:hover { color: white; }
+
+    /* HERO */
+    .hero {
+      background: #3498db;
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 16px; }
+    .hero p  { font-size: 1.1rem; margin-bottom: 28px; color: #dce9f5; }
+    .hero button {
+      background: white; color: #3498db;
+      border: none; padding: 12px 28px;
+      font-size: 1rem; border-radius: 6px; cursor: pointer;
+    }
+    .hero button:hover { background: #f0f0f0; }
+
+    /* ABOUT */
+    .about { text-align: center; padding: 60px 20px; background: white; }
+    .about h2 { font-size: 1.8rem; margin-bottom: 14px; color: #2c3e50; }
+    .about p  { color: #666; max-width: 600px; margin: 0 auto; line-height: 1.8; }
+
+    /* SERVICES */
+    .services { padding: 60px 20px; background: #f4f4f4; text-align: center; }
+    .services h2 { font-size: 1.8rem; margin-bottom: 36px; color: #2c3e50; }
+    .cards { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; }
+    .card {
+      background: white; border-radius: 8px;
+      padding: 28px 24px; width: 220px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card .icon { font-size: 2rem; margin-bottom: 12px; }
+    .card h3 { font-size: 1.1rem; margin-bottom: 10px; color: #2c3e50; }
+    .card p  { font-size: 0.88rem; color: #888; line-height: 1.7; }
+
+    /* CONTACT */
+    .contact { background: #2c3e50; color: white; text-align: center; padding: 60px 20px; }
+    .contact h2 { font-size: 1.8rem; margin-bottom: 10px; }
+    .contact p  { color: #aaa; margin-bottom: 24px; }
+    .contact input, .contact textarea {
+      display: block; margin: 10px auto; padding: 12px;
+      width: 100%; max-width: 420px;
+      border: none; border-radius: 6px; font-size: 0.95rem;
+    }
+    .contact textarea { height: 110px; resize: none; }
+    .contact button {
+      margin-top: 14px; padding: 12px 32px;
+      background: #3498db; color: white;
+      border: none; border-radius: 6px; font-size: 1rem; cursor: pointer;
+    }
+    .contact button:hover { background: #2980b9; }
+
+    /* FOOTER */
+    footer { text-align: center; padding: 20px; background: #1a252f; color: #aaa; font-size: 0.85rem; }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">MySite</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Welcome to My Website 👋</h1>
+    <p>A simple website built with just HTML and CSS.</p>
+    <button>Get Started</button>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>We are a small team that loves building websites. This is a beginner-friendly example to help you learn HTML and CSS.</p>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Web Design</h3>
+        <p>Beautiful and simple websites for everyone.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💻</div>
+        <h3>Development</h3>
+        <p>Clean code that works on all browsers.</p>
+      </div>
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Mobile Ready</h3>
+        <p>Looks great on phones and tablets too.</p>
+      </div>
+    </div>
+  </section>
+<!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Send us a message and we'll get back to you!</p>
+    <input type="text"  placeholder="Your Name" />
+    <input type="email" placeholder="Your Email" />
+    <textarea placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 MySite. Made with ❤️ using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
+
