@@ -20,6 +20,7 @@ pipeline {
                 echo 'Website deployed successfully!'
             }
         }
+    }
         post {
             success {
                 echo 'Pipeline completed! Website is live.'
