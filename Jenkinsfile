@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: https://github.com/Moksha1811/my-website.git',
+                git url: 'https://github.com/Moksha1811/my-website.git',
                 branch: 'main'
             }
         }
