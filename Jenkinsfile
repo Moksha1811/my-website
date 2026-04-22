@@ -15,9 +15,11 @@ pipeline {
         }
         stage('Deploy Website') {
             steps {
-                sh 'mkdir -p/var/www/html'
-                sh 'cp index.html /var/www/html/index.html'
-                echo 'Website deployed successfully!'
+                sh '''
+                    mkdir -p /var/www/html
+                    cp index.html /var/www/html/index.html
+                    echo "Website deployed successfully!"
+                '''
             }
         }
     }
